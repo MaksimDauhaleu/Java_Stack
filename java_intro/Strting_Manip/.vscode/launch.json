@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringManipTest",
+            "request": "launch",
+            "mainClass": "StringManipTest",
+            "projectName": "Strting_Manip_d6849a55"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StringManip",
+            "request": "launch",
+            "mainClass": "StringManip",
+            "projectName": "Strting_Manip_d6849a55"
+        }
+    ]
+}

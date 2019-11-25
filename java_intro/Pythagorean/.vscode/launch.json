@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Help",
+            "request": "launch",
+            "mainClass": "Help",
+            "projectName": "Pythagorean_2d13d460"
+        }
+    ]
+}

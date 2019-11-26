@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Map",
+            "request": "launch",
+            "mainClass": "Map",
+            "projectName": "Map_da697470"
+        }
+    ]
+}

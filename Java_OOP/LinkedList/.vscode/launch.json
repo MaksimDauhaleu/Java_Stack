@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ListTester",
+            "request": "launch",
+            "mainClass": "ListTester",
+            "projectName": "LinkedList_f553185f"
+        }
+    ]
+}

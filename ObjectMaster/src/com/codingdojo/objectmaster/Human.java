@@ -15,6 +15,14 @@ public class Human {
 		this.name = str;
 	}
 	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
 	public int getStrength() {
 		return strength;
 	}

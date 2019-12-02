@@ -7,7 +7,9 @@ public class HumanTest {
 		Human ninja1 = new Human("Kobe");
 		Human samurai1 = new Human("Shaq");
 		Human wizard1 = new Human("Phil");
+		Wizard w = new Wizard();
 		ninja1.attack(samurai1);
+		w.heal(samurai1);
 		System.out.println(samurai1.getHealth());
 	}
 

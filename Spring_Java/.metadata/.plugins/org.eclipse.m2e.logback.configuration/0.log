@@ -1,1 +1,33 @@
 2019-12-02 16:21:47,100 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-12-02 16:24:37,278 [Worker-14: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.strings:Strings:0.0.1-SNAPSHOT @ /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Strings/pom.xml.
+2019-12-02 16:24:40,678 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Strings/src/main/java
+2019-12-02 16:24:40,678 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Strings/src/main/resources
+2019-12-02 16:24:40,686 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Strings/src/main/resources
+2019-12-02 16:24:40,698 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Strings/src/test/java
+2019-12-02 16:24:46,820 [Worker-14: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 13 sec
+2019-12-02 16:24:46,836 [Worker-14: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-12-02 16:24:47,840 [Worker-14: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.strings:Strings:0.0.1-SNAPSHOT @ /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Strings/pom.xml.
+2019-12-02 16:24:49,650 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Strings/src/main/java
+2019-12-02 16:24:49,650 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Strings/src/main/resources
+2019-12-02 16:24:49,650 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Strings/src/main/resources
+2019-12-02 16:24:49,651 [Worker-14: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Strings/src/test/java
+2019-12-02 16:24:51,416 [Worker-14: Import Getting Started Content] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Strings
+2019-12-02 16:24:51,423 [Worker-14: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2019-12-02 16:24:53,797 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-02 16:24:53,827 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-02 16:24:53,857 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-02 16:24:53,866 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-02 16:24:53,866 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Strings/src/test/resources
+2019-12-02 16:24:53,867 [Worker-18: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Strings
+2019-12-02 16:24:53,870 [Worker-18: Building workspace] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Strings
+2019-12-02 16:24:53,888 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-02 16:27:39,505 [Worker-14: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-02 16:27:39,511 [Worker-14: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-02 16:27:39,520 [Worker-14: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-02 16:27:39,538 [Worker-14: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-02 16:27:39,538 [Worker-14: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Strings/src/test/resources
+2019-12-02 16:31:25,966 [Worker-18: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-02 16:31:25,972 [Worker-18: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-02 16:31:25,973 [Worker-18: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-02 16:31:25,976 [Worker-18: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-02 16:31:25,976 [Worker-18: Launching Strings - StringsApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Strings/src/test/resources

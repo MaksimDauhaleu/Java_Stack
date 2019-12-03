@@ -40,3 +40,60 @@ Binding(COMMAND+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:04.014
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:04.016
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@23fed844[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=626)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:04.019
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:04.083
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.036
+!MESSAGE Boot LS startup time from start to initialized: 3996ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.099
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CGenIDXNisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.105
+!MESSAGE subscribing to classpath changes: sts4.classpath.CGenIDXN isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.109
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.112
+!MESSAGE subsribers = {sts4.classpath.CGenIDXN=Send Classpath Notifications(173)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.114
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.115
+!MESSAGE project Strings ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.116
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.117
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CGenIDXN => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.117
+!MESSAGE Preparing classpath changed notification Strings
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.118
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.126
+!MESSAGE classpath=87 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.128
+!MESSAGE buffering callback sts4.classpath.CGenIDXN Strings false 87
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.128
+!MESSAGE executing callback sts4.classpath.CGenIDXN 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-02 16:25:08.188
+!MESSAGE executing callback sts4.classpath.CGenIDXN SUCCESS [done]

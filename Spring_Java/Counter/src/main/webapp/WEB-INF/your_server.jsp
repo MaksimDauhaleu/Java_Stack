@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Your Server</title>
 </head>
 <body>
-
+	<h1>Your Server</h1>
 </body>
 </html>

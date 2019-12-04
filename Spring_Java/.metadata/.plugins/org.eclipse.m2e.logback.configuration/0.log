@@ -672,3 +672,76 @@ java.io.FileNotFoundException: /Users/owner/.m2/repository/.cache/m2e/1.13.0/05b
 2019-12-03 18:47:51,389 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-12-03 18:47:51,391 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-03 18:47:51,391 [Worker-158: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 18:52:26,618 [Worker-157: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.displaydate:DisplayDate:0.0.1-SNAPSHOT @ /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/DisplayDate/pom.xml.
+2019-12-03 18:52:28,740 [Worker-166: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 18:52:28,741 [Worker-166: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 18:52:28,744 [Worker-166: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 18:52:28,750 [Worker-166: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 18:52:28,750 [Worker-166: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/DisplayDate/src/test/resources
+2019-12-03 18:55:18,851 [Worker-157: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.chughes:NinjaGold:0.0.1-SNAPSHOT @ /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/NinjaGold/pom.xml.
+2019-12-03 18:55:19,424 [Worker-157: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 18:55:19,424 [Worker-157: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 18:55:19,426 [Worker-157: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 18:55:19,431 [Worker-157: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 18:55:19,431 [Worker-157: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/NinjaGold/src/test/resources
+2019-12-03 18:55:20,698 [Worker-166: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.chughes:NinjaGold:0.0.1-SNAPSHOT @ /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/NinjaGold/pom.xml.
+2019-12-03 18:55:21,418 [Worker-160: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 18:55:21,419 [Worker-160: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 18:55:21,419 [Worker-160: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 18:55:21,422 [Worker-160: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 18:55:21,422 [Worker-160: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/NinjaGold/src/test/resources
+2019-12-03 19:18:23,875 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:18:23,878 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:18:23,883 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:18:23,886 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:18:23,886 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:20:59,304 [Worker-177: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:20:59,306 [Worker-177: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:20:59,306 [Worker-177: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:20:59,310 [Worker-177: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:20:59,310 [Worker-177: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:21:59,129 [Worker-169: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:21:59,131 [Worker-169: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:21:59,135 [Worker-169: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:21:59,140 [Worker-169: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:21:59,140 [Worker-169: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:22:32,510 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:22:32,511 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:22:32,512 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:22:32,517 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:22:32,517 [Worker-175: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:23:05,520 [Worker-179: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:23:05,521 [Worker-179: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:23:05,522 [Worker-179: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:23:05,534 [Worker-179: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:23:05,535 [Worker-179: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:30:16,848 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:30:16,850 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:30:16,852 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:30:16,854 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:30:16,854 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:31:17,183 [Worker-183: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:31:17,184 [Worker-183: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:31:17,188 [Worker-183: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:31:17,190 [Worker-183: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:31:17,191 [Worker-183: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:32:30,985 [Worker-167: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:32:30,986 [Worker-167: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:32:30,989 [Worker-167: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:32:30,992 [Worker-167: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:32:30,992 [Worker-167: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:35:20,720 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:35:20,723 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:35:20,723 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:35:20,727 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:35:20,727 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:36:31,494 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:36:31,496 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:36:31,498 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:36:31,502 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:36:31,502 [Worker-182: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources
+2019-12-03 19:37:05,500 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:37:05,500 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-12-03 19:37:05,503 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-03 19:37:05,505 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-03 19:37:05,505 [Worker-176: Launching Counter - CounterApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Counter/src/test/resources

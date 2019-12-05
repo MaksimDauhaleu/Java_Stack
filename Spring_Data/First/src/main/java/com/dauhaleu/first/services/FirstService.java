@@ -20,9 +20,6 @@ public class FirstService {
 		return fRepo.findAll();
     }
 	
-	public First createBook(First b) {
-        return fRepo.save(b);
-    }
 	
 	public First findBook(Long id) {
         Optional<First> optionalBook = fRepo.findById(id);
@@ -31,5 +28,31 @@ public class FirstService {
         } else {
             return null;
         }
-  	}
+	}
+	
+	public First createBook(First b) {
+		return fRepo.save(b);
+	}
+	
+	
+	
+	public First updateBook(First b) {
+		return fRepo.save(b);
+	}
+
+	public First updateBook(Long id, String title, String desc, String lang, Integer numOfPages) {
+		Optional <First> temp = fRepo.findById(id);
+		if(temp != null) {
+			temp.get().setTitle(title);
+			temp.get().setDescription(desc);
+			temp.get().setLanguage(lang);
+			temp.get().setNumberOfPages(numOfPages);
+			fRepo.save(temp.get());
+			
+			return temp.get();
+		}else {
+			return null;
+		}
+	}
+
 }

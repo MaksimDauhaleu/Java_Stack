@@ -46,9 +46,9 @@ public class FirstController {
         return book;
     }
     
-//    @RequestMapping(value="/api/books/{id}", method=RequestMethod.DELETE)
-//    public void destroy(@PathVariable("id") Long id) {
-//        firstService.deleteBook(id);
-//    }
+    @RequestMapping(value="/api/books/{id}", method=RequestMethod.DELETE)
+    public void destroy(@PathVariable("id") Long id) {
+        firstService.deleteBook(id);
+    }
 	
 }

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.dauhaleu.first.models.First;
 import com.dauhaleu.first.repositories.FirstRepository;
+import java.lang.IllegalArgumentException;
 
 @Service
 public class FirstService {
@@ -34,8 +35,6 @@ public class FirstService {
 		return fRepo.save(b);
 	}
 	
-	
-	
 	public First updateBook(First b) {
 		return fRepo.save(b);
 	}
@@ -53,6 +52,10 @@ public class FirstService {
 		}else {
 			return null;
 		}
+	}
+	
+	public void deleteBook(Long id) {
+		fRepo.deleteById(id);
 	}
 
 }

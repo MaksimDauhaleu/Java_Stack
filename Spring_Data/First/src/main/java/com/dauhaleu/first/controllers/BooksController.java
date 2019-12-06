@@ -8,8 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.dauhaleu.first.models.First;
 import com.dauhaleu.first.services.FirstService;
@@ -42,6 +44,13 @@ import com.dauhaleu.first.services.FirstService;
 	            bookService.createBook(book);
 	            return "redirect:/books";
 	        }
+	    }
+	    
+	    @RequestMapping("books/{id}")
+	    public String show(@PathVariable("id") Long id, Model model) {
+	    	First book = bookService.findBook(id);
+	    	model.addAttribute("book", book);
+	    	return "show.jsp";
 	    }
 	}
 

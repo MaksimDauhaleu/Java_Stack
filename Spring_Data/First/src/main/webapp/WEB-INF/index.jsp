@@ -1,12 +1,15 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>    
 <h1>All Books</h1>
-<table>
-    <thead>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<table class="table">
+    <thead class="thead-dark">
         <tr>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Language</th>
-            <th>Number of Pages</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Language</th>
+            <th scope="col">Number of Pages</th>
         </tr>
     </thead>
     <tbody>

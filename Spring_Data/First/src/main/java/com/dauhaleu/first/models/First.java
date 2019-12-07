@@ -31,7 +31,6 @@ public class First {
     private String language;
     @Min(100)
     private Integer numberOfPages;
-    // This will not allow the createdAt column to be updated after creation
     @Column(updatable=false)
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date createdAt;

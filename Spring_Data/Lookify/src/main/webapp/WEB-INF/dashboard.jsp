@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+
+<style>
+	body{
+		background-color: #68D962;
+		font-family:Candara;
+	}
+	span{
+		color:black;
+		font-size:100%;
+	}
+	
+	.table{
+		margin-top:20px;
+	}
+</style>
+</head>
+<body>
+
+<nav id = "nas" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Lookify</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/songs/new">Add New<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="search/topTen">Top Songs</a>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+	<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Ranking</th>
+            <th scope="col">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <c:forEach items="${songs}" var="song">
+        <tr>
+            <td><c:out value="${song.title}"/></td>
+            <td><c:out value="${song.artist}"/></td>
+            <td><c:out value="${song.rating}"/></td>
+  			<td>
+  				<a href="#">
+          			<span class="glyphicon glyphicon-backward"></span>
+        		</a>
+  				<a href="#">
+          			<span class="glyphicon glyphicon-stop"></span>
+        		</a>
+  				<a href="#">
+          			<span class="glyphicon glyphicon-play"></span>
+        		</a>
+        		<a href="#">
+          			<span class="glyphicon glyphicon-next"></span>
+        		</a>
+  			</td>
+        </tr>
+        </c:forEach>
+    </tbody>
+</table>
+</body>
+</html>

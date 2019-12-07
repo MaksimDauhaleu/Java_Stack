@@ -27,7 +27,8 @@ public class Lookify {
    
 	@Size(min= 2)
     private String title;
-  
+	
+	private String audio;
     	
 	@Size(min= 2)
     private String artist;
@@ -52,7 +53,10 @@ public class Lookify {
     	this.title = title;
     	this.artist = art;
     	this.rating = rat;
+
     }
+    
+    
 
     
     //Getters and Setters
@@ -66,6 +70,15 @@ public class Lookify {
 
 	public String getTitle() {
 		return title;
+	}
+
+	
+	public String getAudio() {
+		return audio;
+	}
+
+	public void setAudio(String audio) {
+		this.audio = audio;
 	}
 
 	public void setTitle(String title) {

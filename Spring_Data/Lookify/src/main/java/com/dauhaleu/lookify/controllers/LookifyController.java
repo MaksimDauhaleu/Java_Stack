@@ -6,8 +6,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.dauhaleu.lookify.models.Lookify;
 import com.dauhaleu.lookify.services.LookifyService;
@@ -58,5 +61,19 @@ public class LookifyController {
 		List<Lookify> songs = serviceL.getTopTen();
 		model.addAttribute("songs",songs);
 		return "topTen.jsp";
+	}
+	
+
+	@RequestMapping("/search/{artist}")
+	public String search(@PathVariable("artist") String artist, Model model) {
+		List<Lookify> songs = serviceL.getSearchSongs(artist);
+		model.addAttribute("artist", artist);
+		model.addAttribute("songs", songs);
+		return "search.jsp";
+	}
+	
+	@PostMapping("/search")
+	public String search(@RequestParam("artist") String artist) {
+		return "redirect:/search/"+artist;
 	}
 }

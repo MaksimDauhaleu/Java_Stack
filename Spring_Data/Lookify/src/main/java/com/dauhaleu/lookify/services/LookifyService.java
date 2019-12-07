@@ -42,6 +42,11 @@ private final LookifyRepository lookifyR;
 	public List<Lookify> getTopTen(){
 		return lookifyR.findTop10ByOrderByRatingDesc();
 	}
+	
+
+	public List<Lookify> getSearchSongs(String artist){
+		return lookifyR.findByArtist(artist);
+	}
 		
 
 }

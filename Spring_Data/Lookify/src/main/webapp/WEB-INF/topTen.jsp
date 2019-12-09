@@ -14,7 +14,35 @@
 	}
 </style>
 </head>
+
 <body>
+
+
+<nav id = "nas" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/dashboard">Lookify</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/songs/new">Add New<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/search/topTen">Top Songs</a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="/search/topSingers">Top 1000<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    
+    <form action="/searchArt" method="post" class="form-inline my-2 my-lg-0">
+      <input name="artist" class="form-control mr-sm-2" type="search" placeholder="Artist" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    
+  </div>
+</nav>
+
+
+
 <div class = "container">
 		<table class="table table-hover table-dark">
   <thead>
@@ -31,20 +59,6 @@
         	<td><c:out value="${song.rating}"/></td>
             <td><c:out value="${song.title}"/></td>
             <td><c:out value="${song.artist}"/></td>
-  			<td>
-  				<a href="#">
-          			<span class="glyphicon glyphicon-backward"></span>
-        		</a>
-  				<a href="#">
-          			<span class="glyphicon glyphicon-stop"></span>
-        		</a>
-  				<a href="#">
-          			<span class="glyphicon glyphicon-play"></span>
-        		</a>
-        		<a href="#">
-          			<span class="glyphicon glyphicon-next"></span>
-        		</a>
-  			</td>
         </tr>
         </c:forEach>
     </tbody>

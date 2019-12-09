@@ -5,20 +5,29 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
+import com.dauhaleu.lookify.models.Artists;
 import com.dauhaleu.lookify.models.Lookify;
+import com.dauhaleu.lookify.repositories.ArtistsRepository;
 import com.dauhaleu.lookify.repositories.LookifyRepository;
 
 @Service
 public class LookifyService {
 	
 private final LookifyRepository lookifyR;
-	
-	public LookifyService(LookifyRepository lookifyR) {
+private final ArtistsRepository artistsR;
+
+
+	public LookifyService(LookifyRepository lookifyR, ArtistsRepository artistsR) {
 		this.lookifyR = lookifyR; 
+		this.artistsR = artistsR; 
 	}
 	
 	public List<Lookify> allSongs(){
 		return lookifyR.findAll();
+	}
+	
+	public List<Artists> allArtists(){
+		return artistsR.findAll();
 	}
 	
 	public Lookify findSong(Long id){
@@ -48,5 +57,9 @@ private final LookifyRepository lookifyR;
 		return lookifyR.findByArtist(artist);
 	}
 		
+	
+	public List<Artists> getSearchArtists(String artist){
+		return artistsR.findByArtist(artist);
+	}
 
 }

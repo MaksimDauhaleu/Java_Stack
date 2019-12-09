@@ -4,6 +4,7 @@ public class SinglyLinkedList {
         this.head = null;
     }    
 
+    
     public void add(int value) {
         Node newNode = new Node(value);
         if(head == null) {

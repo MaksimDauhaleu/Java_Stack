@@ -15,3 +15,4 @@ public interface LookifyRepository extends CrudRepository<Lookify, Long> {
     List<Lookify> findTop10ByOrderByRatingDesc();
     
 }
+

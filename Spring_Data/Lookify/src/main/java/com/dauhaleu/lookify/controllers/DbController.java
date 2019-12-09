@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-
 import com.dauhaleu.lookify.models.Lookify;
 import com.dauhaleu.lookify.services.LookifyService;
 

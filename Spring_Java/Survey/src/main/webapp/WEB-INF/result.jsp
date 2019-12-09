@@ -21,7 +21,7 @@
 	<div class = "container" align = "center">
 		<h1 class = "title">Submitted Info</h1>
 	
-		<div class="form-group row" align = "center">
+		<div class="form-group row">
 		    <label class="col-md-2 col-form-label">Name:</label>
 		    <div class="col-md-10">
 	      		<input type="text" readonly class="form-control-plaintext" value="<c:out value="${name}"/>">

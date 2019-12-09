@@ -1011,3 +1011,8 @@ java.io.FileNotFoundException: /Users/owner/.m2/repository/.cache/m2e/1.13.0/05b
 2019-12-04 11:42:32,801 [Worker-252: Launching Survey - SurveyApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-12-04 11:42:32,805 [Worker-252: Launching Survey - SurveyApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-04 11:42:32,805 [Worker-252: Launching Survey - SurveyApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Survey/src/test/resources
+2019-12-04 12:39:21,198 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-04 12:39:21,210 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-04 12:39:21,210 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-12-04 12:39:21,238 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-04 12:39:21,238 [Worker-262: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/owner/Desktop/Projects/Java_Stack/Spring_Java/Survey/src/test/resources

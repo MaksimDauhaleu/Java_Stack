@@ -1,6 +1,7 @@
 package com.dauhaleu.dojoninja.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -37,6 +38,15 @@ public class ServiceFile {
 	//Create Ninja
 	public Ninja createNinja(Ninja b) {
 		return ninjaRepo.save(b);
+	}
+	//Show Dojo
+	public Dojo singleDojo(Long id) {
+		Optional<Dojo> dojo = dojoRepo.findById(id);
+		if(dojo.isPresent()) {
+			return dojo.get();
+		}else {
+			return null;
+		}
 	}
 	
 	

@@ -47,6 +47,12 @@ public class Ninja {
     	this.age = age;
     	this.dojo = dojo;
     }
+    public Ninja(Ninja ninja) {
+    	this.firstName = ninja.firstName;
+    	this.lastName = ninja.lastName;
+    	this.age = ninja.age;
+    	this.dojo = ninja.dojo;
+    }
 
     // Getters and Setters
 	public Long getId() {

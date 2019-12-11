@@ -32,12 +32,14 @@ public class LicenseController {
 		
 		@RequestMapping("/license/new")
 		public String license() {
+			
 			return "license.jsp";
 		}
 		
 		
 		@RequestMapping("/person/{id}")
 		public String show() {
+			List<Person> allPersons = serviceL.allPersons();
 			return "show.jsp";
 		}
 		

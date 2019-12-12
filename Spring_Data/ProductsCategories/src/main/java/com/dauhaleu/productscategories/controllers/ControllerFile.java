@@ -29,7 +29,9 @@ public class ControllerFile {
 	
 	//New Product
 	@RequestMapping("/newProduct")
-	public String newProductPage(@ModelAttribute("product") Product pro) {
+	public String newProductPage(@ModelAttribute("product") Product pro, Model model) {
+		List<Category> categories = service.getCategories();
+		model.addAttribute("categories",categories);
 		return "newProduct.jsp";
 	}
 	
@@ -42,13 +44,8 @@ public class ControllerFile {
 			Product test = new Product(product);
 			service.createProduct(test);
 			return "redirect:/newCategory";
-		}
-		
-		
+		}	
 	}
-	
-	
-	
 	
 	//New Category
 	@RequestMapping("/newCategory")

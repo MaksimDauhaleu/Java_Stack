@@ -26,6 +26,12 @@
 		    <form:label path="price">Price:</form:label>		   
 		    <form:input path="price" type="number" class="form-control" id="exampleFormControlInput1" placeholder="Price" />
   		</div>
+  		<div class="form-group">
+		    <form:select path = "categories">
+				<c:forEach items="${categories}" var="category">
+    				<form:option value="${category.id}"><c:out value="${category.name}"/></form:option>
+    			</c:forEach>
+			</form:select> </div>
 	    <input class="btn btn-secondary" type="submit" value="Create"/>	 
 	</form:form>
 	</div>

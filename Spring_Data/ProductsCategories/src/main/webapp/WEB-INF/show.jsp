@@ -27,7 +27,7 @@
 		        	<td><c:out value="${product.name}"/></td>
 		            <td><c:out value="${product.description}"/></td>  
 		            <td><c:out value="${product.price}"/></td>   
-		            <td><c:out value="${product.id}"/></td>    
+		            <td><c:out value="${product.categories.size()}"/></td>    
        			 </tr>
    			</c:forEach>
         </tbody>
@@ -49,7 +49,7 @@
          	<c:forEach items="${categories}" var="category">
        			<tr>
 		        	<td><c:out value="${category.name}"/></td>
-		            <td><c:out value="${category.id}"/></td>  		             
+		            <td><c:out value="${category.products.size()}"/></td>  		             
        			 </tr>
    			</c:forEach>
         </tbody>

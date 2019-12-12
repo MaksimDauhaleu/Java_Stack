@@ -18,6 +18,14 @@
 		    <form:label path="name">First Name:</form:label>		   
 		    <form:input path="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" />
   		</div>
+  			<div class="form-group">
+				<form:label path="products">Categories:</form:label>	
+			    <form:select class="form-control" path = "products">
+					<c:forEach items="${products}" var="product">
+	    				<form:option  value="${product.id}"><c:out value="${product.name}"/></form:option>
+	    			</c:forEach>
+				</form:select>
+			</div>
 	    <input class="btn btn-secondary" type="submit" value="Create"/>	 
 	</form:form>
 	</div>

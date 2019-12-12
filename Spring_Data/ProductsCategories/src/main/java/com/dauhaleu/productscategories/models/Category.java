@@ -38,8 +38,9 @@ public class Category {
     
     public Category() {
     }
-    public Category(String name) {
-    	this.name = name;
+    public Category(Category name) {
+    	this.name = name.name;
+    	this.products = name.products;
     }
     
 

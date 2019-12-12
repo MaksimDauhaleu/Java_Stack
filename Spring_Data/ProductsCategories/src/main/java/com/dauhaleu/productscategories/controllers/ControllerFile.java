@@ -49,19 +49,21 @@ public class ControllerFile {
 	
 	//New Category
 	@RequestMapping("/newCategory")
-	public String newCategoryPage(@ModelAttribute("category") Category cat) {
+	public String newCategoryPage(@ModelAttribute("category") Category category, Model model) {
+		List<Product> products = service.getProducts();
+;		model.addAttribute("products", products);
 		return "newCategory.jsp";
 	}
 	
 	//New Category
 	@RequestMapping(value = "/newCategory", method = RequestMethod.POST)
-	public String newCategory(@ModelAttribute("name") String name, BindingResult result) {
+	public String newCategory(@ModelAttribute("category") Category category, BindingResult result) {
 		if(result.hasErrors()) {
 			return"newCategory";
 		}else {
-			Category test = new Category(name);
+			Category test = new Category(category);
 			service.createCategory(test);
-			return"redirect:/";
+			return"redirect:/show";
 		}
 	}
 		

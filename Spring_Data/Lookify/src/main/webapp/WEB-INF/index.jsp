@@ -10,7 +10,7 @@
 <style>
 	body{
 		background-color: #68D962;
-		font-family:Candara;
+		font-family: Lucida Console, Courier, monospace;
 	}
 	#links{
 		margin-left:70%;
@@ -53,7 +53,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
-   font-family: 'Gothic A1', sans-serif;
+    font-family: fangsong;
 }
 .navbar-nav .nav-item .nav-link:hover{color:#fed136;}
 .navbar-expand-md .navbar-nav .dropdown-menu{
@@ -193,19 +193,16 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
 	<div class="container">
-  <!-- Brand -->
-  <a class="navbar-brand" href="/"><span><img src="images/c1aba472-ba82-4c99-a92a-34215ee29dc0_200x200.png"  alt="Oppps"></span></a>
-
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+		<a class="navbar-brand" href="/"><span><img src="https://i.ibb.co/0DdFrw6/1.png" alt="Oppps"></span></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+   			<span class="navbar-toggler-icon"></span>
+  		</button>
 
   <!-- Navbar links -->
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav ml-auto">
 	    	<li class="nav-item">
-				<a class="nav-link" href="/songs/new">Add New</a>
+				<a class="nav-link" href="/dashboard">DashBoard</a>
 			</li>
 	    	<li class="nav-item">
 	    		<a class="nav-link" href="search/topTen">Top Songs</a>
@@ -217,10 +214,10 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	       		<a class="nav-link">|</a>
 	  		</li>
 	  		<li class="nav-item">
-	       		<a class="nav-link" href="/search/topSingers">Sign Up</a>
+	       		<a class="nav-link" href="/regist">Sign Up</a>
 	  		</li>
 	  		<li class="nav-item">
-	       		<a class="nav-link" href="/search/topSingers">Log In</a>
+	       		<a class="nav-link" href="/login">Log In</a>
 	  		</li>
 		</ul>
 	</div>
@@ -229,10 +226,8 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 
 <section id="about">
 <div class="container1">
-
 </div>
-<div class="container2">
-
+<div class="container2" align = "center">
 </div>
 <div class="container3">
 
@@ -242,22 +237,20 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 </div>
 </section>
 
-
-
-<script>
-$(document).on("scroll", function(){
-	if
-  ($(document).scrollTop() > 86){
-	  $("#banner").addClass("shrink");
-	}
-	else
-	{
-		$("#banner").removeClass("shrink");
-	}
-});
-</script>
 </html>
 
+<script>
+    $(document).on("scroll", function(){
+    	if
+      ($(document).scrollTop() > 86){
+    	  $("#banner").addClass("shrink");
+    	}
+    	else
+    	{
+    		$("#banner").removeClass("shrink");
+    	}
+    });
+</script>
 
 
 
@@ -270,23 +263,3 @@ $(document).on("scroll", function(){
 
 
 
-
-
-<!-- <!-- NAV
-	<nav class="navbar navbar-expand-lg navbar-dark">
-		<a class="navbar-brand" href="/">Lookify</a>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    	<ul id = "links" class="navbar-nav mr-auto">
-	      		<li class="nav-item">
-	        		<a id = "a-color" class="nav-link" href="/songs/new">Add New</a>
-	      		</li>
-	      		<li class="nav-item">
-	        		<a id = "a-color" class="nav-link" href="search/topTen">Top Songs</a>
-	      		</li>
-	       		<li class="nav-item">
-	        		<a id = "a-color" class="nav-link" href="/search/topSingers">Top 1000</a>
-	      		</li>
-	    	</ul>    
-		</div>
-	</nav>
-NAV --> 

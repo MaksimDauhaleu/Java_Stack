@@ -22,10 +22,24 @@
 	.table{
 		margin-top:20px;
 	}
+	.black{
+		background-color: red;
+	}
 </style>
 </head>
 <body>
-
+<script>
+$(document).on("scroll", function(){
+	if
+  	($(document).scrollTop() > 86){
+	  $("body").addClass("black");
+	}
+	else
+	{
+		$("body").removeClass("black");
+	}
+});
+</script>
 <nav id = "nas" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/dashboard">Lookify</a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">

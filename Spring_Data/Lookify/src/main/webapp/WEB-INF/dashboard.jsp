@@ -194,6 +194,9 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	width:100%;
 	background-color: black;
 }
+.tr{
+padding-top:5px;
+}
 </style>
 </head>
 <body>
@@ -242,7 +245,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     </thead>
     <tbody>
         <c:forEach items="${songs}" var="song">
-        <tr>
+        <tr class = "tr">
             <td><c:out value="${song.title}"/></td>
             <td><c:out value="${song.artist}"/></td>
             <td><c:out value="${song.rating}"/></td>

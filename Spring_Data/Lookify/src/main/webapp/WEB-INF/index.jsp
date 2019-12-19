@@ -34,8 +34,7 @@
 	color:#6c6c6f;
 	font-size:1em;
 	}
-	h1,h2,h3,h4,h5,h6{color:#323233;text-transform:uppercase;}.navbar-brand  span{
-	color: white;
+	h1,h2,h3,h4,h5,h6{color:#344072;margin:auto;text-transform:none;margin-bottom:-5px;margin-right:25px;}.navbar-brand  span{
 	font-size:25px;font-weight:700;letter-spacing:0.1em;
     font-family: Candara;
 }
@@ -181,19 +180,75 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 .container3{
 	height:500px;
 	width:100%;
-	background-color: #ED5666;
+	background-color: #F2A637;
 }
 .container4{
 	height:200px;
 	width:100%;
 	background-color: black;
 }
+.left{
+	height:100%;
+	width:47%;
+	display: inline-block;
+	position:relative;
+	top:-50px;
+}
+.right{
+	height:100%;
+	width:47%;
+	display: inline-block;
+}
+.search{
+	padding-top:100px;
+	font-family: 'Times New Roman', Times, serif;
+	display:inline-block;
+	width:45%;
+}
+.h1{
+	color:black;
+	text-transform: none;
+}
+.form-control{
+ width:55%;
+ border-radius:20px;
+ border:none;
+ text-align:center;
+ font-family: 'Times New Roman', Times, serif;
+}
+.image{
+	width:60%;
+	height:60%;
+	border-radius:5px;
+}
+#sp{
+padding-bottom: 30px;
+
+}
+#s{
+margin-top: 20px;
+}
+
+.most_pop{
+	width:100%;
+	height:13%; 
+	margin-top:20px;
+}
+font{
+color:#8086A0;
+}
+.sons_name{
+display:inline-block;
+}
+.position{
+display:inline-block;
+}
 </style>
 </head>
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
 	<div class="container">
-		<a class="navbar-brand" href="/"><span><img src="https://i.ibb.co/0DdFrw6/1.png" alt="Oppps"></span></a>
+		<a id="logo" class="navbar-brand" href="/"><span><img src="https://i.ibb.co/0DdFrw6/1.png" alt="Oppps"></span></a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
    			<span class="navbar-toggler-icon"></span>
   		</button>
@@ -224,10 +279,77 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	</div>
 </nav>
 
-<section id="about">
+
 <div class="container1">
+	<div class = "search" align = "center">
+		<a class="navbar-brand" href="/"><span><img id = "sp" src="https://i.ibb.co/0DdFrw6/1.png" alt="Oppps"></span></a>
+		<h1 class = "h1">Start listening for free</h1>
+		<form action = "/searchArt" method = "post" >
+		<div class="active-cyan-4 mb-4">
+			<input id = "s" name = "artist" class="form-control" type="text" placeholder="Find artist,songs,podcasts and more" >
+		</div>
+		</form>	
+	</div>
+	<div class = "search" align = "center">
+		<div class="active-cyan-4 mb-4">
+			<img class = "image" alt="Opps" src="https://images.unsplash.com/photo-1549045508-cf64fd077a0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80"  >
+		</div>
+	</div>
+
 </div>
 <div class="container2" align = "center">
+
+
+	<div class = "left" align = "center">
+		<video width="620" height="340" muted = "muted" autoplay="autoplay">
+	 		<source src="images/video.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	
+	<div class = "right" align = "left">
+		<h1>Top Charts:</h1>
+		<div class = "most_pop">
+			<div class="position"><h1>1 </h1></div>
+			<div class = "sons_name">
+				<h4>All I Want For Christmas Is You</h4>
+		
+				<h6><font>Mariah Carey</font></h6>
+			</div>
+		</div>
+		
+		<div class = "most_pop">
+		<div class="position"><h1>2 </h1></div>
+			<div class = "sons_name">
+				<h4>Circle</h4>
+				<h6><font>Post Malone</font></h6>
+			</div>
+		</div>
+		
+		<div class = "most_pop">
+		<div class="position"><h1>3 </h1></div>
+			<div class = "sons_name">
+				<h4>Rockin' Around The Christmas Tree</h4>
+				<h6><font>Brenda Lee</font></h6>
+			</div>
+		</div>
+		
+		<div class = "most_pop">
+		<div class="position"><h1>4 </h1></div>
+			<div class = "sons_name">
+				<h4>Someone You Loved</h4>
+				<h6><font>Lewis Capaldi</font></h6>
+			</div>
+		</div>
+		
+		<div class = "most_pop">
+		<div class="position"><h1>5 </h1></div>
+			<div class = "sons_name">
+				<h4>Good As Hell</h4>
+				<h6><font>Lizzo</font></h6>
+			</div>
+		</div>	
+	</div>
 </div>
 <div class="container3">
 
@@ -235,21 +357,28 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 <div class="container4">
 
 </div>
-</section>
+
 
 </html>
 
 <script>
     $(document).on("scroll", function(){
     	if
-      ($(document).scrollTop() > 86){
+      ($(document).scrollTop() > 100){
     	  $("#banner").addClass("shrink");
+    	  $("#logo").show();
     	}
+    	
     	else
     	{
+    		$("#logo").hide();
     		$("#banner").removeClass("shrink");
     	}
     });
+	$( document ).ready(function() {
+		$("#logo").hide();
+	});
+		
 </script>
 
 

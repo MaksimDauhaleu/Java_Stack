@@ -34,7 +34,7 @@
 	color:#6c6c6f;
 	font-size:1em;
 	}
-	h1,h2,h3,h4,h5,h6{color:#344072;margin:auto;text-transform:none;margin-bottom:-5px;margin-right:25px;}.navbar-brand  span{
+	h1,h2,h3,h4,h5,h6{color:black;margin:auto;text-transform:none;margin-bottom:-5px;margin-right:25px;}.navbar-brand  span{
 	font-size:25px;font-weight:700;letter-spacing:0.1em;
     font-family: Candara;
 }
@@ -175,12 +175,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 .container2{
 	height:500px;
 	width:100%;
-	background-color: #CDF564;
+ 	background-image: linear-gradient(#EC52A5, #F2A637);
 }
 .container3{
 	height:500px;
 	width:100%;
-	background-color: #F2A637;
+	background-image: linear-gradient(#F2A637, black);
 }
 .container4{
 	height:200px;
@@ -192,12 +192,16 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	width:47%;
 	display: inline-block;
 	position:relative;
-	top:-50px;
+	top:0px;
+	left:-56px;
 }
 .right{
 	height:100%;
 	width:47%;
 	display: inline-block;
+	position:relative;
+	left:200px;
+	top:-40px;
 }
 .search{
 	padding-top:100px;
@@ -205,7 +209,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	display:inline-block;
 	width:45%;
 }
-.h1{
+#h1{
 	color:black;
 	text-transform: none;
 }
@@ -242,6 +246,9 @@ display:inline-block;
 }
 .position{
 display:inline-block;
+}
+video{
+border-radius:5px;
 }
 </style>
 </head>
@@ -283,7 +290,7 @@ display:inline-block;
 <div class="container1">
 	<div class = "search" align = "center">
 		<a class="navbar-brand" href="/"><span><img id = "sp" src="https://i.ibb.co/0DdFrw6/1.png" alt="Oppps"></span></a>
-		<h1 class = "h1">Start listening for free</h1>
+		<h1 id = "h1">Start listening for free</h1>
 		<form action = "/searchArt" method = "post" >
 		<div class="active-cyan-4 mb-4">
 			<input id = "s" name = "artist" class="form-control" type="text" placeholder="Find artist,songs,podcasts and more" >
@@ -301,14 +308,14 @@ display:inline-block;
 
 
 	<div class = "left" align = "center">
-		<video width="620" height="340" muted = "muted" autoplay="autoplay">
+		<video width=100% height=100% muted = "muted" loop = "loop" autoplay="autoplay">
 	 		<source src="images/video.mp4" type="video/mp4">
 		</video>
 	</div>
 	
 	
 	<div class = "right" align = "left">
-		<h1>Top Charts:</h1>
+		<h1 id = "h1">Top Charts:</h1>
 		<div class = "most_pop">
 			<div class="position"><h1>1 </h1></div>
 			<div class = "sons_name">
@@ -354,7 +361,7 @@ display:inline-block;
 <div class="container3">
 
 </div>
-<div class="container4">
+<div class = "container4">
 
 </div>
 

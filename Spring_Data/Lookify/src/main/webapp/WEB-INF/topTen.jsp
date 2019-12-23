@@ -213,7 +213,7 @@ table{
 				<a class="nav-link" href="/dashboard">DashBoard</a>
 			</li>
 	    	<li class="nav-item">
-	    		<a class="nav-link" href="search/topTen">Top Songs</a>
+	    		<a class="nav-link" href="/search/topTen">Top Songs</a>
 			</li>
 	 		<li class="nav-item">
 	       		<a class="nav-link" href="/search/topSingers">Top 1000</a>
@@ -221,11 +221,14 @@ table{
 	  		<li class="nav-item">
 	       		<a class="nav-link">|</a>
 	  		</li>
-	  		<li class="nav-item">
+	  		<li id = "one" class="nav-item">
 	       		<a class="nav-link" href="/regist">Sign Up</a>
 	  		</li>
-	  		<li class="nav-item">
+	  		<li id = "two" class="nav-item">
 	       		<a class="nav-link" href="/login">Log In</a>
+	  		</li>
+	  		<li id = "three" class="nav-item">
+	       		<a class="nav-link" href="/logout">Log Out</a>
 	  		</li>
 		</ul>
 	</div>
@@ -241,7 +244,6 @@ table{
         	<th scope="col">Ranking</th>
             <th scope="col">Title</th>
             <th scope="col">Artist</th>
-            <th scope="col">Options</th>
         </tr>
     </thead>
     <tbody>
@@ -253,27 +255,6 @@ table{
         </tr>
         </c:forEach>
     </tbody>
-</table>
-		<table class="table table-hover table-dark">
-  <thead>
-        <tr>	
-        	<th scope="col">Ranking</th>
-            <th scope="col">Title</th>
-            <th scope="col">Artist</th>
-            <th scope="col">Options</th>
-        </tr>
-    </thead>
-    <tbody>
-        <c:forEach items="${songs}" var="song">
-        <tr>
-        	<td><c:out value="${song.rating}"/></td>
-            <td><c:out value="${song.title}"/></td>
-            <td><c:out value="${song.artist}"/></td>
-        </tr>
-        </c:forEach>
-    </tbody>
-</table>
-
 </div>
 <script>
     $(document).on("scroll", function(){
@@ -286,6 +267,16 @@ table{
     		$("#banner").removeClass("shrink");
     	}
     });
+    $( document ).ready(function() {		
+		var x = ${id};
+		if(x == true){
+			$("#one").hide();
+			$("#two").hide();
+			$("#three").show();
+		}else{
+			$("#three").hide();
+		}
+	});
 </script>
 </body>
 </html>

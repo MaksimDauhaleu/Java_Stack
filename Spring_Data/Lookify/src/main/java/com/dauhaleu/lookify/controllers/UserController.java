@@ -70,7 +70,7 @@ public class UserController {
     		User test = lookifyService.findByEmail(email);
     		session.setAttribute("id", test.getId());
     		session.setAttribute("loggedIn", true);
-    		return "redirect:/home";
+    		return "redirect:/";
     	}else {
     		String error = "Please make sure that you have entered your login and password correctly.";
     		model.addAttribute("error",error);

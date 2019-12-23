@@ -2,6 +2,9 @@ package com.dauhaleu.lookify.controllers;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -16,8 +19,11 @@ import com.dauhaleu.lookify.models.Artists;
 import com.dauhaleu.lookify.models.Lookify;
 import com.dauhaleu.lookify.services.LookifyService;
 
+
+
 @Controller
 public class LookifyController {
+	
 	
 	public final LookifyService serviceL;
 	
@@ -28,7 +34,14 @@ public class LookifyController {
 	
 	//Index
 	@RequestMapping("/")
-	public String index() {
+	public String index(HttpSession session,Model model) {
+		boolean x;
+		if(session.getAttribute("id") == null) {
+			x = false;
+		}else {
+			x = true;
+		}
+		model.addAttribute("id", x);
 		return "index.jsp";
 	}
 	
@@ -36,16 +49,30 @@ public class LookifyController {
 	
 	//DashBoard
 	@RequestMapping("/dashboard")
-	public String dashboard(Model model) {
+	public String dashboard(Model model,HttpSession session) {
 		List<Lookify> songs = serviceL.allSongs();
 		model.addAttribute("songs",songs);
+		boolean x;
+		if(session.getAttribute("id") == null) {
+			x = false;
+		}else {
+			x = true;
+		}
+		model.addAttribute("id", x);
 		return "dashboard.jsp";
 	}
 	
 	
 	//Create
 	@RequestMapping("/songs/new")
-	public String newSong(@ModelAttribute("song") Lookify book){
+	public String newSong(@ModelAttribute("song") Lookify book,HttpSession session,Model model){
+		boolean x;
+		if(session.getAttribute("id") == null) {
+			x = false;
+		}else {
+			x = true;
+		}
+		model.addAttribute("id", x);
 		return "create.jsp";
 	}
 	
@@ -70,9 +97,16 @@ public class LookifyController {
 	
 	//TopTen	
 	@RequestMapping("/search/topTen")
-	public String topTen(Model model) {
+	public String topTen(Model model,HttpSession session) {
 		List<Lookify> songs = serviceL.getTopTen();
 		model.addAttribute("songs",songs);
+		boolean x;
+		if(session.getAttribute("id") == null) {
+			x = false;
+		}else {
+			x = true;
+		}
+		model.addAttribute("id", x);
 		return "topTen.jsp";
 	}
 	
@@ -80,8 +114,13 @@ public class LookifyController {
 	@RequestMapping("/search/{artist}")
 	public String search(@PathVariable("artist") String artist, Model model) {
 		List<Lookify> songs = serviceL.getSearchSongs(artist);
+		double max = 1000;
+		double min = 1;
+		double random = (Math.random() * ((max - min) + 1)) + min;
+		System.out.println(random + "***");
 		model.addAttribute("artist", artist);
 		model.addAttribute("songs", songs);
+		model.addAttribute("random",random);
 		return "search.jsp";
 	}
 	//Search

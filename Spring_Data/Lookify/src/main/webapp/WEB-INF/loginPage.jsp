@@ -25,7 +25,7 @@
 			width: 350px;
 			margin-top: auto;
 			margin-bottom: auto;
-			background: #68D962;
+			background: rgba(0,0,0,0.5);
 			position: relative;
 			display: flex;
 			justify-content: center;
@@ -64,6 +64,12 @@
 			box-shadow: none !important;
 			outline: 0px !important;
 		}
+		label{
+			color:white;
+		}
+		p{
+			color:white;
+		}
 		font{
 		color:red;
 		}
@@ -98,7 +104,8 @@
 		
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
-						Don't have an account? <a href="#" class="ml-2">Sign Up</a>
+						<p>Don't have an account?</p>
+						<a href="#" class="ml-2">Sign Up</a>
 					</div>
 					<div class="d-flex justify-content-center links">
 						<a href="#">Forgot your password?</a>
@@ -107,5 +114,13 @@
 			</div>
 		</div>
 	</div>
+	<footer class="page-footer">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"><font>© 2018 Copyright:</font>
+    <a href="https://mdbootstrap.com/education/bootstrap/"> maks-projects.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 </body>
 </html>

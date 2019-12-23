@@ -55,7 +55,7 @@ private final UserRepository userRepository;
 	}
 	
 	public List<Lookify> getTopTen(){
-		return lookifyR.findTop10ByOrderByRatingDesc();
+		return lookifyR.findTop30ByOrderByRatingDesc();
 	}
 	
 

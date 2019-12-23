@@ -197,6 +197,9 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 .tr{
 padding-top:5px;
 }
+.a{
+ margin-top:100px;
+}
 </style>
 </head>
 <body>
@@ -213,10 +216,10 @@ padding-top:5px;
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav ml-auto">
 	    	<li class="nav-item">
-				<a class="nav-link" href="/dashboard">DashBoard</a>
+				<a class="nav-link" href="/songs/new">Create Song</a>
 			</li>
 	    	<li class="nav-item">
-	    		<a class="nav-link" href="search/topTen">Top Songs</a>
+	    		<a class="nav-link" href="/search/topTen">Top Songs</a>
 			</li>
 	 		<li class="nav-item">
 	       		<a class="nav-link" href="/search/topSingers">Top 1000</a>
@@ -224,11 +227,14 @@ padding-top:5px;
 	  		<li class="nav-item">
 	       		<a class="nav-link">|</a>
 	  		</li>
-	  		<li class="nav-item">
+	  		<li id = "one" class="nav-item">
 	       		<a class="nav-link" href="/regist">Sign Up</a>
 	  		</li>
-	  		<li class="nav-item">
+	  		<li id = "two"  class="nav-item">
 	       		<a class="nav-link" href="/login">Log In</a>
+	  		</li>
+	  		<li id = "three"  class="nav-item">
+	       		<a class="nav-link" href="/logout">Log Out</a>
 	  		</li>
 		</ul>
 	</div>
@@ -254,7 +260,25 @@ padding-top:5px;
     </tbody>
 </table>
 </div>
+<footer class="page-footer">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"><font>© 2018 Copyright:</font>
+    <a href="https://mdbootstrap.com/education/bootstrap/"> maks-projects.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 <script>
+$(document).ready(function() {		
+	var x = ${id};
+	if(x == true){
+		$("#one").hide();
+		$("#two").hide();
+		$("#three").show();
+	}else{
+	$("#three").hide();
+	}
+});
     $(document).on("scroll", function(){
     	if
       ($(document).scrollTop() > 86){

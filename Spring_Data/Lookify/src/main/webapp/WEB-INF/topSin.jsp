@@ -177,9 +177,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     margin-bottom: 40px;
 }
 }
+.tt{
+	background-color:red:
+}
 </style>
 </head>
-<body>
+<body class = "tt">
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
 	<div class="container">
 			<a class="navbar-brand" href="/"><span><img src="https://i.ibb.co/0DdFrw6/1.png"  alt="Oppps"></span></a>
@@ -196,17 +199,15 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	    		<a class="nav-link" href="/search/topTen">Top Songs</a>
 			</li>
 	 		<li class="nav-item">
-	       		<a class="nav-link" href="/search/topSingers">Top 1000</a>
+	       		<a class="nav-link" href="/songs/new">Create Song</a>
 	  		</li>
 	  		<li class="nav-item">
 	       		<a class="nav-link">|</a>
 	  		</li>
-	  		<li class="nav-item">
-	       		<a class="nav-link" href="/regist">Sign Up</a>
-	  		</li>
-	  		<li class="nav-item">
-	       		<a class="nav-link" href="/login">Log In</a>
-	  		</li>
+	  		<form action="/searchArt" method="post" class="form-inline my-2 my-lg-0">
+				<input name="artist" class="form-control mr-sm-2" type="search" placeholder="Artist" aria-label="Search">
+   				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+   			</form>
 		</ul>
 	</div>
 	</div>
@@ -229,15 +230,25 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
     </tbody>
 </table>
 </div>
+<footer class="page-footer">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"><font>© 2018 Copyright:</font>
+    <a href="https://mdbootstrap.com/education/bootstrap/"> maks-projects.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 <script>
 $(document).on("scroll", function(){
 	if
   ($(document).scrollTop() > 86){
 	  $("#banner").addClass("shrink");
+	  $("body").addClass("tt");
 	}
 	else
 	{
 		$("#banner").removeClass("shrink");
+		$("body").removeClass("tt");
 	}
 });
 </script>

@@ -270,16 +270,19 @@ border-radius:5px;
 	    		<a class="nav-link" href="search/topTen">Top Songs</a>
 			</li>
 	 		<li class="nav-item">
-	       		<a class="nav-link" href="/search/topSingers">Top 1000</a>
+	       		<a class="nav-link" href="/search/topSingers">Top Singers</a>
 	  		</li>
 	  		<li class="nav-item">
 	       		<a class="nav-link">|</a>
 	  		</li>
-	  		<li class="nav-item">
+	  		<li id = "one" class="nav-item">
 	       		<a class="nav-link" href="/regist">Sign Up</a>
 	  		</li>
-	  		<li class="nav-item">
+	  		<li id = "two" class="nav-item">
 	       		<a class="nav-link" href="/login">Log In</a>
+	  		</li>
+	  		<li id = "three" class="nav-item">
+	       		<a class="nav-link" href="/logout">Log Out</a>
 	  		</li>
 		</ul>
 	</div>
@@ -290,7 +293,7 @@ border-radius:5px;
 <div class="container1">
 	<div class = "search" align = "center">
 		<a class="navbar-brand" href="/"><span><img id = "sp" src="https://i.ibb.co/0DdFrw6/1.png" alt="Oppps"></span></a>
-		<h1 id = "h1">Start listening for free</h1>
+		<h1 id = "h1">Start listening now</h1>
 		<form action = "/searchArt" method = "post" >
 		<div class="active-cyan-4 mb-4">
 			<input id = "s" name = "artist" class="form-control" type="text" placeholder="Find artist,songs,podcasts and more" >
@@ -315,7 +318,7 @@ border-radius:5px;
 	
 	
 	<div class = "right" align = "left">
-		<h1 id = "h1">Top Charts:</h1>
+		<h1 id = "h1">Top Charts</h1>
 		<div class = "most_pop">
 			<div class="position"><h1>1 </h1></div>
 			<div class = "sons_name">
@@ -362,11 +365,59 @@ border-radius:5px;
 
 </div>
 <div class = "container4">
+<!-- Footer -->
+<footer class="page-footer">
 
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <font><i name="logo-instagram"></i></font>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3"><font>© 2018 Copyright:</font>
+    <a href="https://mdbootstrap.com/education/bootstrap/"> maks-projects.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 </div>
 
 
 </html>
+
+
 
 <script>
     $(document).on("scroll", function(){
@@ -382,10 +433,18 @@ border-radius:5px;
     		$("#banner").removeClass("shrink");
     	}
     });
-	$( document ).ready(function() {
+	$( document ).ready(function() {		
+		var x = ${id};
+		if(x == true){
+			$("#one").hide();
+			$("#two").hide();
+			$("#three").show();
+		}else{
+			$("#three").hide();
+		}
 		$("#logo").hide();
 	});
-		
+	
 </script>
 
 

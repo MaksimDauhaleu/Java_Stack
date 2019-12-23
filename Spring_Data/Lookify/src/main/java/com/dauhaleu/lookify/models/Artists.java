@@ -27,6 +27,14 @@ public class Artists {
 	@Size(min= 2)
     private String artist;
     	
+	private String images;
+	
+//	private Integer rank;
+//	
+//	private Integer albums;
+//	
+//	private Integer songs;
+	
     	  	
 	@Column(updatable=false)
     @DateTimeFormat(pattern="yyyy-MM-dd")
@@ -38,13 +46,28 @@ public class Artists {
     public Artists() {
     }
     
+    public Artists(String art,String images) {
+    	this.artist = art;
+    	this.images = images;
+//    	this.albums = albums;
+//    	this.rank = rank;
+//    	this.songs = songs;
+    }
     public Artists(String art) {
     	this.artist = art;
     }
 
-    
-    
     //Setters and Getters
+    
+    
+    public String getImages() {
+		return images;
+	}
+
+	public void setImages(String images) {
+		this.images = images;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -60,6 +83,30 @@ public class Artists {
 	public void setArtist(String artist) {
 		this.artist = artist;
 	}
+
+//	public Integer getRank() {
+//		return rank;
+//	}
+//
+//	public void setRank(Integer rank) {
+//		this.rank = rank;
+//	}
+//
+//	public Integer getAlbums() {
+//		return albums;
+//	}
+//
+//	public void setAlbums(Integer albums) {
+//		this.albums = albums;
+//	}
+//
+//	public Integer getSongs() {
+//		return songs;
+//	}
+//
+//	public void setSongs(Integer songs) {
+//		this.songs = songs;
+//	}
 
 	public Date getCreatedAt() {
 		return createdAt;
